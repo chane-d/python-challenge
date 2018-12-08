@@ -58,11 +58,11 @@ output_path = open('pypoll_results_summary.txt', 'w')
 
 output_path.write('Election Results\n')
 output_path.write('-----------------------\n')
-output_path.write(f'Total Votes: {number_of_votes}')
+output_path.write(f'Total Votes: {number_of_votes}\n')
 for count in range(len(candidates)):
-    output_path.write(f'{candidates[count]}: {percentage_of_votes[count]}% ({vote_counts[count]})')
-output_path.write('---------------------')
-output_path.write(f'Winner: {winner}')
-output_path.write('---------------------')
+    output_path.write(f'{candidates[count]}: {percentage_of_votes[count]}% ({vote_counts[count]})\n')
+output_path.write('---------------------\n')
+output_path.write(f'Winner: {winner}\n')
+output_path.write('---------------------\n')
 output_path.write('')
 output_path.close
